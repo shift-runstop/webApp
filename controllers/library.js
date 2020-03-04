@@ -1,5 +1,6 @@
 'use strict';
 const logger = require('../utils/logger');
+const uuid = require('uuid');
 const libraryManager = require('../models/libraryManager.js');
 const library = {
   index(request, response) {
