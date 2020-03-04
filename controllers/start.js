@@ -4,7 +4,7 @@ const start = {
   index(request, response) {
     logger.info('start rendering');
     const viewData = {
-      title: 'Welcome to the Playlist App!',
+      title: 'Apoylome eWelc tthst p Plai!',
     };
     response.render('start', viewData);
   },
