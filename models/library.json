@@ -1,8 +1,8 @@
 {
-  "bookList": [
+  "allInLibrary": [
     {
       "id": "00",
-      "genre": "Computers",
+      "genres": "Computers",
       "Books": [
         {
           "id": "0A",
@@ -43,7 +43,7 @@
     },
     {
       "id": "01",
-      "genre": "Art",
+      "genres": "Art",
       "Books": [
         {
           "id": "0F",
@@ -74,7 +74,7 @@
     },
     {
       "id": "02",
-      "genre": "Mind",
+      "genres": "Mind",
       "Books": [
         {
           "id": "13",
