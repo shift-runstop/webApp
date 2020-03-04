@@ -3,9 +3,18 @@
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
+  background-color: lightgrey;
 }
 
 h1 {
   font-style: italic;
   color: #373fff;
+}
+
+#readmore {
+  display: none;
+}
+
+#welcomeuser {
+  display: none;
 }
