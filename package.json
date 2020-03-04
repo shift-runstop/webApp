@@ -1,7 +1,7 @@
 {
-  "name": "playlist-app",
+  "name": "library-app",
   "version": "0.0.1",
-  "description": "A little playlist maker",
+  "description": "tettle playaA liklis mr",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
