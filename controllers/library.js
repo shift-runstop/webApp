@@ -26,7 +26,7 @@ const library = {
   
   deleteGenre(request, response) {
     const genreId = request.params.id;
-    logger.debug(`Deleting Playlist ${genreId}`);
+    logger.debug(`Deleting Genre ${genreId}`);
     libraryManager.removeGenre(genreId);
     response.redirect('/library');
   },
