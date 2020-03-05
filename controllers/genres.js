@@ -22,8 +22,14 @@ const genres = {
   },
   addBook(request,response) {
     const genreId = request.params.id;
-    const genre = libraryManager.getGenre
-  }
+    const genre = libraryManager.getGenre(genreId);
+    const newBook = {
+      title: request.body.title,
+      author: request.body.author,
+    };
+    libraryManager.addBook(genreId,newBook);
+    response.redirect('/genres/' + genreId);
+  },
 };
 
 module.exports = genres;
