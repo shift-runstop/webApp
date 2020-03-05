@@ -16,7 +16,8 @@ const libraryManager = {
   _.remove(this.allInLibrary, { id: id });
   },
   addBook(id, book) {
-    
+    const genres = this.getGenre(id);
+    genres.songs.push(book);
   }
 };
 module.exports = libraryManager;
