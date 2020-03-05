@@ -20,6 +20,10 @@ const genres = {
     libraryManager.removeBook(genreId, bookId);
     response.redirect('/genres/' + genreId);
   },
+  addBook(request,response) {
+    const genreId = request.params.id;
+    const genre = libraryManager.getGenre
+  }
 };
 
 module.exports = genres;
