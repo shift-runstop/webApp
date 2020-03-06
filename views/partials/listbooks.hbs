@@ -1,7 +1,7 @@
 <table class="ui fixed striped table">
   <thead>
     <tr>
-      <th>Song</th>
+      <th>Title</th>
       <th>Author</th>
       <th>ISBN</th>
       <th>Publisher</th>
@@ -9,7 +9,7 @@
     </tr>
   </thead>
   <tbody>
-    {{#each genres.books}}
+    {{#each genres.Books}}
       <tr>
         <td>
           {{title}}
@@ -24,7 +24,7 @@
           {{publisher}}
         </td>
         <td>
-          <a href="/genres/{{../genre.id}}/deletebook/{{id}}" class="ui tiny red button">Delete Book</a>
+          <a href="/library/{{../genre.id}}/deletebook/{{id}}" class="ui tiny black button">Delete Book</a>
         </td>
       </tr>
     {{/each}}

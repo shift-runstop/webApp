@@ -1,12 +1,12 @@
 {{#each genres}}
   <section class="ui stacked segment">
     <h2 class="ui header">
-      {{title}}
+      {{genres}}
     </h2>
-    <a href="/genres/{{id}}" class="ui inverted icon button">
+    <a href="/book/{{id}}" class="ui black icon button">
       <i class="icon folder open"></i>
     </a>
-    <a href="/library/deletegenre/{{id}}" class="ui inverted icon button">
+    <a href="/library/deletegenre/{{id}}" class="ui black icon button">
       <i class="icon trash"></i>
     </a>
   </section>

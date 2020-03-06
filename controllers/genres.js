@@ -11,14 +11,14 @@ const genres = {
       title: 'Genre',
       genres: libraryManager.getGenre(genreId),
     };
-    response.render('genre', viewData);
+    response.render('book', viewData); //genre
   },
     deleteBook(request, response) {
     const genreId = request.params.id;
     const bookId = request.params.bookid;
     logger.debug(`Deleting Book ${bookId} from Genre ${genreId}`);
     libraryManager.removeBook(genreId, bookId);
-    response.redirect('/genres/' + genreId);
+    response.redirect('/book/' + genreId); //genres
   },
   addBook(request,response) {
     const genreId = request.params.id;
@@ -28,7 +28,7 @@ const genres = {
       author: request.body.author,
     };
     libraryManager.addBook(genreId,newBook);
-    response.redirect('/genres/' + genreId);
+    response.redirect('/book/' + genreId); //genres
   },
 };
 
