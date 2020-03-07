@@ -2,7 +2,9 @@
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 const libraryManager = {
-  allInLibrary: require('./library.json').allInLibrary,
+  store: new JsonStore('./models/library.json', { allInLibrary: []}),
+  collection: 'allInLibrary',
+  
   getAllGenres() {
     return this.allInLibrary;
   },
