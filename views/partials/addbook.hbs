@@ -2,12 +2,14 @@
   <div class="two fields">
     <div class="field">
       <label>Title</label>
-      <input placeholder="Title" type="text" name="title" autofocus required pattern="[0-9A-Z][\0-9a-z\S]+( [0-9A-Z][0-9a-z]+)*" title="Your entry is invalid, try again.">
+      <input placeholder="Title" type="text" name="title" autofocus required title="Your entry is invalid, try again.">
     </div>
     <div class="field">
       <label>Author</label>
-      <input placeholder="Author" type="text" name="author" required pattern="[0-9A-Z][\0-9a-z\S]+( [0-9A-Z][0-9a-z]+)*" title="Your entry is invalid.">
+      <input placeholder="Author" type="text" name="author" required title="Your entry is invalid.">
     </div>
   </div>
   <button class="ui black submit button">Add Book</button>
 </form>
+
+<!--pattern="[0-9A-Z][\0-9a-z\S]+( [0-9A-Z][0-9a-z]+)*"  Regex is broken on the input box-->

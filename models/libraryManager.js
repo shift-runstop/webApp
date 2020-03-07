@@ -1,13 +1,13 @@
 'use strict';
 const _ = require('lodash');
 const JsonStore = require('./JsonStore');
-//const libraryManager = {
-//  store: new JsonStore('./models/library.json', { allInLibrary: []}),
-//  collection: 'allInLibrary',
+const libraryManager = {                                                        // comment out these three lines to  //
+  store: new JsonStore('./models/library.json', { allInLibrary: []}),           // bring functional listgenres and   //
+  collection: 'allInLibrary',                                                   // list books partials back up       //
   
-const libraryManager = {
+//const libraryManager = {                                                      // uncomment these                   //
 
-  allInLibrary: require('./library.json').allInLibrary,
+//  allInLibrary: require('./library.json').allInLibrary,                       //************************************//
   
   getAllGenres() {
     return this.allInLibrary;
