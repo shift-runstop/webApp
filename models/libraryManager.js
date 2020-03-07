@@ -8,9 +8,8 @@ const libraryManager = {
   getGenre(id) {
     return _.find(this.allInLibrary, { id: id });
   },
-  removeBook(id, bookId) {
-    const genre = this.getGenre(id);
-    _.remove(genre.books, { id: bookId });
+  addGenre(genre) {
+    this.allInLibrary.push(genre);
   },
   removeGenre(id) {
   _.remove(this.allInLibrary, { id: id });
@@ -18,6 +17,10 @@ const libraryManager = {
   addBook(id, book) {
     const genres = this.getGenre(id);
     genres.book.push(book);
-  }
+  },
+  removeBook(id, bookId) {
+  const genre = this.getGenre(id);
+  _.remove(genre.books, { id: bookId });
+  },
 };
 module.exports = libraryManager;
