@@ -1,79 +1,115 @@
 {
   "allInLibrary": [
     {
-      "id" : "01",
-      "title": "Beethoven Sonatas",
-      "duration": 35,
-      "songs": [
+      "id": "00",
+      "genres": "Computers",
+      "Books": [
         {
-          "id" : "04",
-          "title": "Piano Sonata No. 3",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 5
+          "id": "01",
+          "author": "kk;asdkn",
+          "title": "this is title",
+          "ISBN": "12232154986",
+          "publisher": "published"
         },
         {
-          "id" : "05",
-          "title": "Piano Sonata No. 7",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 6
+          "id": "02",
+          "author": "jkasdv",
+          "title": "title here",
+          "ISBN": "3156423",
+          "publisher": "somebody"
         },
         {
-          "id" : "06",
-          "title": "Piano Sonata No. 10",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 4
+          "id": "03",
+          "author": "jkasdvjnasd",
+          "title": "pojweqvpoqwev",
+          "ISBN": "54885312",
+          "publisher": "vsdvoeivqvn"
+        },
+        {
+          "id": "04",
+          "author": "dasvevae",
+          "title": "asdvasev",
+          "ISBN": "6979313",
+          "publisher": "vasdveasd"
+        },
+        {
+          "id": "05",
+          "author": "asdvasdve",
+          "title": "dadveawerqq",
+          "ISBN": "549872132",
+          "publisher": "asdgdpojdv"
         }
       ]
     },
     {
-      "id" : "02",
-      "title": "Beethoven Concertos",
-      "duration": 23,
-      "songs": [
+      "id": "06",
+      "genres": "Art",
+      "Books": [
         {
-          "id" : "07",
-          "title": "Piano Concerto No. 0",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 8
-        },
-        {
-          "id" : "08",
-          "title": "Piano Concerto No. 4",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 3
-        },
-        {
-          "id" : "09",
-          "title": "Piano Concerto No. 6",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 4
+          "id": "07",
+          "author": "art book author",
+          "title": "kansdipvasd",
+          "ISBN": "217852312321",
+          "publisher": "klasdvojapsdv"
+        },        {
+          "id": "08",
+          "author": "someone",
+          "title": "something",
+          "ISBN": "2165786621",
+          "publisher": "some org"
+        },        {
+          "id": "09",
+          "author": "sdfuohsoidfbne",
+          "title": "bsdriuoiwpe",
+          "ISBN": "8789845612",
+          "publisher": "klsdfiupwpero"
+        },        {
+          "id": "10",
+          "author": "kurorrtntgdfg",
+          "title": "dsahyjkykruk",
+          "ISBN": "156468792",
+          "publisher": "vadsvevawq"
         }
-      ]
+        ]
     },
     {
-      "id" : "03",
-      "title": "Beethoven Variations",
-      "duration": 67,
-      "songs": [
+      "id": "11",
+      "genres": "Mind",
+      "Books": [
         {
-          "id" : "10",
-          "title": "Opus 34: Six variations on a theme in F major",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 11
+          "id": "12",
+          "author": "klansd;vk",
+          "title": "psychology for dummies",
+          "ISBN": "879461354",
+          "publisher": "kjasdnvjasdv"
         },
         {
-          "id" : "11",
-          "title": "Opus 120: Thirty-three variations on a waltz by Diabelli in C majo",
-          "artist": "Beethoven",
-          "genre": "Classical",
-          "duration": 45
+          "id": "13",
+          "author": "sdfbfspjfbnsdf",
+          "title": "sbfdsnbporweb",
+          "ISBN": "54985621",
+          "publisher": "sbdfbsdfjbohi"
+        },
+        {
+          "id": "14",
+          "author": "dflsbnofdsir",
+          "title": "bsdkjfboirep",
+          "ISBN": "216578952313",
+          "publisher": "bsdfbsdfiouorg"
+        },
+        {
+          "id": "15",
+          "author": "sdfbnfkldsdiurtn",
+          "title": "sdfbjfnosdfibnkfb",
+          "ISBN": "254687513598",
+          "publisher": "bsdfbiosdfyioye"
+        },
+        {
+          "id": "16",
+          "author": "sdfklbnsodfihtio",
+          "title": "sdfbknfpdsourdt",
+          "ISBN": "13879865456",
+          "publisher": "sdfbosidyfeowp"
         }
       ]
     }

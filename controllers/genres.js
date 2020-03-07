@@ -5,20 +5,30 @@ const libraryManager = require('../models/libraryManager');
 
 const genres = {
   index(request, response) {
-    const Id = request.params.id;
+    const genreId = request.params.id;
     logger.debug('Genre id = ' + genreId);
     const viewData = {
       title: 'Genre',
-      genre: libraryManager.getGenre(genreId),
+      genres: libraryManager.getGenre(genreId),
     };
-    response.render('genre', viewData);
+    response.render('book', viewData); //genre
   },
     deleteBook(request, response) {
     const genreId = request.params.id;
     const bookId = request.params.bookid;
     logger.debug(`Deleting Book ${bookId} from Genre ${genreId}`);
     libraryManager.removeBook(genreId, bookId);
-    response.redirect('/genre/' + genreId);
+    response.redirect('/book/' + genreId); //genres
+  },
+  addBook(request,response) {
+    const genreId = request.params.id;
+    const genre = libraryManager.getGenre(genreId);
+    const newBook = {
+      title: request.body.title,
+      author: request.body.author,
+    };
+    libraryManager.addBook(genreId,newBook);
+    response.redirect('/book/' + genreId); //genres
   },
 };
 
