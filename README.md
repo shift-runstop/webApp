@@ -1,8 +1,18 @@
-Lab 5
-=================
+# tcihlG
+#=================
 
-- Changed dashboard to show playlist summary
-- Added playlist view to show individual playlist
-- Added delete song button
-- Used lodash to simplify get playlist function
-- Added delete playlist function
+* Glitch project 
+
+** done
+
+- Made it glithcy
+- Assets added
+- Library finished
+
+** list
+
+- starting to add UUID
+- adding functionality
+- persistence
+- startPage [readMore()]
+- AboutPage functionality $take from webDev01 site$
