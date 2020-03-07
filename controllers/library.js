@@ -16,7 +16,7 @@ const library = {
     const newGenre = {
       id: uuid(),
       title: request.body.title,
-      book:[],
+      books:[],
     }
     libraryManager.addGenre(newGenre);
     response.redirect('/library');
