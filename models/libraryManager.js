@@ -17,7 +17,7 @@ const libraryManager = {
   },
   addBook(id, book) {
     const genres = this.getGenre(id);
-    genres.songs.push(book);
+    genres.book.push(book);
   }
 };
 module.exports = libraryManager;
