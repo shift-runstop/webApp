@@ -1,15 +1,16 @@
 # tcihlG
-#=================
 
-* Glitch project 
+# =================
 
-** done
+# Glitch project
+
+## done
 
 - Made it glithcy
 - Assets added
 - Library finished
 
-** list
+## list
 
 - starting to add UUID
 - adding functionality
