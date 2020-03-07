@@ -1,6 +1,6 @@
 'use strict';
 const _ = require('lodash');
-const JsonStore = require('./json-store');
+const JsonStore = require('./JsonStore');
 const libraryManager = {
   store: new JsonStore('./models/library.json', { allInLibrary: []}),
   collection: 'allInLibrary',
