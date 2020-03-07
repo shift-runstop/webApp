@@ -2,6 +2,7 @@
 
 const logger = require('../utils/logger');
 const libraryManager = require('../models/libraryManager');
+const uuid = require('uuid');
 
 const genres = {
   index(request, response) {
@@ -24,6 +25,7 @@ const genres = {
     const genreId = request.params.id;
     const genre = libraryManager.getGenre(genreId);
     const newBook = {
+      id : uuid(),
       title: request.body.title,
       author: request.body.author,
     };
