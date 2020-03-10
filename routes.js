@@ -15,6 +15,6 @@ router.get('/book/:id/deleteBook/:bookid', genres.deleteBook);
 router.get('/library/deletegenre/:id', library.deleteGenre);
 
 router.post('/library/addGenre', library.addGenre);
-router.post('/book/:id/addBook', genres.addBook);
+router.post('/book/:id/addbook', genres.addBook);
 module.exports = router;
 
