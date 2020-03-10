@@ -10,16 +10,21 @@ const libraryManager = {                                                        
 //  allInLibrary: require('./library.json').allInLibrary,                       //************************************//
   
   getAllGenres() {
-    return this.allInLibrary;
+    return this.store.findAll(this.collection); // allInLibrary;
   },
   getGenre(id) {
-    return _.find(this.allInLibrary, { id: id });
+    return this.store.findOneBy(this.collection, {id:id}); //_.find(this.allInLibrary, { id: id });
   },
   addGenre(genre) {
-    this.allInLibrary.push(genre);
+    this.store.add(this.collection, genre); //allInLibrary.push(genre);
   },
   removeGenre(id) {
-  _.remove(this.allInLibrary, { id: id });
+  // _.remove(this.allInLibrary, { id: id });
+    const genre = this.getGenre(id);
+    this.store.remove(this.collection, genre);
+  },
+  removeAllGenres() {
+    this.store.removeAll(this.collection);
   },
   addBook(id, book) {
     const genres = this.getGenre(id);
