@@ -32,7 +32,8 @@ const libraryManager = {                                                        
   },
   removeBook(id, bookId) {
   const genre = this.getGenre(id);
-  _.remove(genre.books, { id: bookId });
+  const books = genre.books;
+  _.remove(books, { id: bookId });
   },
 };
 module.exports = libraryManager;

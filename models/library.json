@@ -42,37 +42,6 @@
       ]
     },
     {
-      "id": "06",
-      "genres": "Art",
-      "Books": [
-        {
-          "id": "07",
-          "author": "art book author",
-          "title": "kansdipvasd",
-          "ISBN": "217852312321",
-          "publisher": "klasdvojapsdv"
-        },        {
-          "id": "08",
-          "author": "someone",
-          "title": "something",
-          "ISBN": "2165786621",
-          "publisher": "some org"
-        },        {
-          "id": "09",
-          "author": "sdfuohsoidfbne",
-          "title": "bsdriuoiwpe",
-          "ISBN": "8789845612",
-          "publisher": "klsdfiupwpero"
-        },        {
-          "id": "10",
-          "author": "kurorrtntgdfg",
-          "title": "dsahyjkykruk",
-          "ISBN": "156468792",
-          "publisher": "vadsvevawq"
-        }
-        ]
-    },
-    {
       "id": "11",
       "genres": "Mind",
       "Books": [
