@@ -4,7 +4,7 @@ const start = {
   index(request, response) {
     logger.info('start rendering');
     const viewData = {
-      title: 'Apoylome eWelc tthst p Plai!',
+      title: 'ome eWelttc hst p PlApoylai!',
     };
     response.render('start', viewData);
   },

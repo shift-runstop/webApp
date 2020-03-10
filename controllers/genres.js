@@ -16,7 +16,7 @@ const genres = {
   },
     deleteBook(request, response) {
     const genreId = request.params.id;
-    const bookId = request.params.bookid;
+    const bookId = request.params.bookId;
     logger.debug(`Deleting Book ${bookId} from Genre ${genreId}`);
     libraryManager.removeBook(genreId, bookId);
     response.redirect('/book/' + genreId); //genres
