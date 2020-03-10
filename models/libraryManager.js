@@ -30,12 +30,13 @@ const libraryManager = {                                                        
   addBook(id, book) {
     const genres = this.getGenre(id);
     genres.book.push(book);
+    logger.debug(`book`)
   },
   removeBook(id, bookId) {
   const genre = this.getGenre(id);
   const books = genre.books;
   _.remove(books, { id: bookId });
-  logger.debug(`$genre, $books`)
+  logger.debug(`${genre}, ${books}`)
   },
 };
 module.exports = libraryManager;
