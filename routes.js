@@ -11,7 +11,7 @@ router.get('/library', library.index);
 router.get('/about', about.index);
 router.get('/book/:id', genres.index);
 
-router.get('/book/:id/deleteBook/:bookid', genres.deleteBook);
+router.get('/genres/:id/deleteBook/:bookid', genres.deleteBook);
 router.get('/library/deletegenre/:id', library.deleteGenre);
 
 router.post('/library/addGenre', library.addGenre);
