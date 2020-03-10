@@ -1,5 +1,6 @@
 'use strict';
 const _ = require('lodash');
+const logger = require('../utils/logger')
 const JsonStore = require('./JsonStore');
 const libraryManager = {                                                        // comment out these three lines to  //
   store: new JsonStore('./models/library.json', { allInLibrary: []}),           // bring functional listgenres and   //
@@ -34,6 +35,7 @@ const libraryManager = {                                                        
   const genre = this.getGenre(id);
   const books = genre.books;
   _.remove(books, { id: bookId });
+  logger.debug(`$genre, $books`)
   },
 };
 module.exports = libraryManager;
