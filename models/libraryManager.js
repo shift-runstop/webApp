@@ -2,14 +2,14 @@
 const _ = require('lodash');
 const logger = require('../utils/logger')
 const JsonStore = require('./JsonStore');
-const libraryManager = {                                                        // comment out these three lines to  //
-  store: new JsonStore('./models/library.json', { allInLibrary: []}),           // bring functional listgenres and   //
-  collection: 'allInLibrary',                                                   // list books partials back up       //
+const libraryManager = {                                                        
+  store: new JsonStore('./models/library.json', { allInLibrary: []}),           
+  collection: 'allInLibrary',                                                   
   
-//const libraryManager = {                                                      // uncomment these                   //
+//const libraryManager = {
 
-//  allInLibrary: require('./library.json').allInLibrary,                       //************************************//
-  
+//  allInLibrary: require('./library.json').allInLibrary,
+
   getAllGenres() {
     return this.store.findAll(this.collection); // allInLibrary;
   },
