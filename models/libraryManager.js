@@ -32,6 +32,19 @@ const libraryManager = {
     genres.book.push(book);
     logger.debug(`book`)
   },
+  updateBook(request, response) {
+    const genreId = request.params.id;
+    const bookId = request.params.bookId;
+    logger.debug("updating book " + bookId);
+    const updatedBook = {
+      title: request.body.title,
+      artist: request.body.author,
+      ISBN: request.body.ISBN,
+      publisher: request.body.publisher
+    };
+    playlistStore.editSong(playlistId, songId, updatedSong);
+    response.redirect('/playlist/' + playlistId);
+  },
   removeBook(id, bookId) {
   const genre = this.getGenre(id);
   const books = genre.books;

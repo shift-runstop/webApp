@@ -11,23 +11,38 @@
   </thead>
   <tbody>
     {{#each genres.Books}}
-      <tr>
-        <td>
-          {{title}}
-        </td>
-        <td>
-          {{author}}
-        </td>
-        <td>
-          {{ISBN}}
-        </td>
-        <td>
-          {{publisher}}
-        </td>
-        <td>
-          <a href="/genres/{{../genres.id}}/deleteBook/{{id}}" class="ui tiny black button">Delete Book</a>
-        </td>
+    <form class="ui form" action="/genres/{{../genres.id}}/updateBook/{{id}}" method="POST">
+    <tr class="fields">
+      <td class="field">
+        <span class="ui input">
+         <input placeholder="Title" type="text" size="30" name="title" autofocus required value = "{{title}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+         <input placeholder="Title" type="text" size="30" name="author" autofocus required value = "{{author}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+         <input placeholder="Title" type="text" size="30" name="ISBN" autofocus required value = "{{ISBN}}">
+        </span>
+      </td>
+      <td class="field">
+        <span class="ui input">
+         <input placeholder="Title" type="text" size="30" name="publisher" autofocus required value = "{{publisher}}">
+        </span>
+      </td>
+      <td class="center aligned">
+        <button class="ui submit icon button"><i class="icon pencil alternate"></i></button>
+      </td>
+      <td class="center aligned">
+        <a href="/genres/{{../genres.id}}/deleteBook/{{id}}" class="ui icon tiny black button delsong">
+          <i class="icon trash"></i>
+        </a>
+      </td>
       </tr>
+    </form>   
     {{/each}}
   </tbody>
 </table>
