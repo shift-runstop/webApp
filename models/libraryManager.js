@@ -38,12 +38,12 @@ const libraryManager = {
     logger.debug("updating book " + bookId);
     const updatedBook = {
       title: request.body.title,
-      artist: request.body.author,
+      author: request.body.author,
       ISBN: request.body.ISBN,
       publisher: request.body.publisher
     };
-    playlistStore.editSong(playlistId, songId, updatedSong);
-    response.redirect('/playlist/' + playlistId);
+    libraryManager.editBook(genreId, bookId, updatedBook);
+    response.redirect('/genres/' + genreId);
   },
   removeBook(id, bookId) {
   const genre = this.getGenre(id);

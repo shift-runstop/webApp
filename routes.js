@@ -16,6 +16,6 @@ router.get('/library/deletegenre/:id', library.deleteGenre);
 
 router.post('/library/:id/addGenre', library.addGenre);
 router.post('/genres/addbook', genres.addBook);
-router.post('/genres/:id/updateBook/:bookId', genres.updateBook);
+//router.post('/genres/:id/updateBook/:bookId', genres.updateBook);
 module.exports = router;
 
