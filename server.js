@@ -5,17 +5,67 @@
 const express = require("express");
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
+const bodyParser = require('body-parser');
+const cookieParser = require('cookie-parser');
+const fileUpload = require('express-fileupload');
 
-// initialise project, absolutely fine.
+// initialise
 const app = express();
-
+// session 
+app.use(cookieParser());
+// use fileUpload
+app.use(fileUpload());
 // static files output to public folder, sure if you say so.
 app.use(express.static("public"));
 
-// use handlebars as view engine, ok if I must.
+// use handlebars
 app.engine('.hbs', exphbs({
   extname: '.hbs',
   defaultLayout: 'main',
+    
+  // create own helper methods something other than these two
+
+  helpers: {
+    
+    uppercase: function(word) {
+      return word.toUpperCase();
+    },
+
+    formatDate: function(date) {
+      let d = new Date(date);
+      let dateNum = d.getDate();
+      let month = d.getMonth();
+      let year = d.getFullYear();
+      let days = [
+        "Sun",
+        "Mon",
+        "Tue",
+        "Wed",
+        "Thu", 
+        "Fri",
+        "Sat"
+      ];
+
+      let months = [
+        "Jan",
+        "Feb",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec"
+        ];
+      let monthname = months[month];
+      let dayName = days[d.getDay()];
+      return dayName + ' ' + monthname + " " + dateNum + ", " + year;
+    }
+  }
+
 }));
 app.set('view engine', '.hbs');
 
@@ -23,11 +73,10 @@ app.set('view engine', '.hbs');
 const routes = require('./routes');
 app.use('/', routes);
 
-// for parsing bodies??
-const bodyParser = require("body-parser");
+// for parsing bodies, moved require to top of file
 app.use(bodyParser.urlencoded({extended: false, }));
 
-// spying on people
-const listener = app.listen(process.env.PORT || 4000, function () {
-  logger.info('Your app is listening on port ' + listener.address().port);
+// listenOcarinaoftime.mp3 max port
+const listener = app.listen(process.env.PORT || 65535, function () {
+  logger.info('listening for clients on port ' + listener.address().port);
 });

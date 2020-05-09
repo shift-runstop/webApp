@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "firstName": "admin",
+            "lastName": "password",
+            "email": "admin@pass.com",
+            "password": "pass",
+            "id": "2bL133789-666g-1a36-6kn3-aa13372d51"
+          }
+    ]
+}

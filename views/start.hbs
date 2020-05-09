@@ -1,10 +1,10 @@
-{{> menu}}
+{{> welcomemenu}}
 
 <section class="ui two column grid segment inverted">
   <div class="ui column">
-    <h2>Weto thayliste lcome PlAp p!</h2>
+    <h2>Weto thayliste lcome PlAp p! {{fullname}}</h2>
       <p>
-        Made with Glitch.com, for all your glitchy glitches from glitch.commmmmmmThiwiers ll als app low te austo creandintain a ma on plof aycollectilists.
+        Made with Glitch.com then moved offline. as glitches IDE is glitchy, for all your glitchy glitches from glitch.commmmmmmThiwiers ll als app low te austo creandintain a ma on plof aycollectilists.
       </p>
       <div class="buttons">
         <button class="ui black button" onclick="showHide()">
@@ -25,6 +25,29 @@
       </div>
       <div id="welcomeuser" class="ui message" onclick="hideWelcome()"> </div>
   </div>
+
+<div class="ui divider"></div>
+
+<h3 class="ui center aligned header"> now Plnsst A cThepponayliita:</h3>
+<div class="ui two statistics">
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalGenres}}
+        </div>
+        <div class="label">
+            Genres of books in this Library of Babel
+        </div>
+    </div>
+    <div class="ui huge statistic">
+        <div class="value">
+            {{totalBooks}}
+        </div>
+        <div class="label">
+            These are books
+        </div>
+    </div>
+</div>
+
   <div class="ui column">
     <div class="ui grid">
       <div class="ui eight wide column">
