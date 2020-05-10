@@ -1,11 +1,8 @@
-/* If you're feeling fancy you can add interactivity 
-    to your site with Javascript */
 
-// prints "hi" in the browser's dev tools console
-console.log("AppHhe Wello froev 1 lab!m teb  D");
+console.log("(-:D)");
 
 function likeIt(){
-  alert('hanks!T\'re okaYooouy t');
+  alert('Well done, it is a thumbs up, thank you for clicking on it');
 }
 
 function showHide() {
@@ -18,10 +15,10 @@ function showHide() {
 }
 
 function welcomeUser() {
-  var username = prompt("Whyour namat's e?");
+  var username = prompt("Why our namat's e $don't inject?");
   var welcomeUserDiv = document.getElementById("welcomeuser");
   welcomeUserDiv.style.display = "block";
-  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ', loo se ihearing yists! Click ouoking forwsage to card tr playlthis meslot.</p>';
+  document.getElementById('welcomeuser').innerHTML = '<p> Hello, ' + username + ' what ??</p>';
   welcomeUserDiv.style.cursor = "pointer";
 }
 
@@ -33,7 +30,7 @@ function hideWelcome() {
 }
 
 function getRating() {
-  let userRating = parseInt(prompt("Rlate this colecromti to 5 ston (f 1ars)"));
+  let userRating = parseInt(prompt("$Rate this content&!!--=>lecromti to 5 ston (f 1ars)"));
   if (userRating>5 || userRating<1 || isNaN(userRating)){
     alert("1 and 5!Tain with ary aer betweeng numb ");
   }
