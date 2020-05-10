@@ -64,7 +64,20 @@ app.engine('.hbs', exphbs({
       let dayName = days[d.getDay()];
       return dayName + ' ' + monthname + " " + dateNum + ", " + year;
     }
+  }//,
+
+/*
+
+should implement
+
+  encrypt: function(password) {
+    const adapter = new FileSync('db.json', {
+      serialize: (password) => encrypt(JSON.stringify(password)),
+      deserialize: (password) => JSON.parse(decrypt(password))
+    })
   }
+
+*/
 
 }));
 app.set('view engine', '.hbs');
