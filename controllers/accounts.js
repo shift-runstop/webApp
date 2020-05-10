@@ -20,7 +20,7 @@ const accounts = {
   },
 
   logout(request, response) {
-    response.cookie('spacebook', '');
+    response.cookie('', '');
     response.redirect('/');
   },
 
@@ -32,26 +32,30 @@ const accounts = {
   },
 
   register(request, response) {
+
     const user = request.body;
     user.id = uuid();
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
+  
   },
 
   authenticate(request, response) {
+
     const user = userstore.getUserByEmail(request.body.email);
     if (user && user.password === request.body.password) {
-      response.cookie('playlist', user.email);
+      response.cookie('genre', user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect('/dashboard');
+      response.redirect('/library');
     } else {
       response.redirect('/login');
     }
+  
   },
 
   getCurrentUser (request) {
-    const userEmail = request.cookies.playlist;
+    const userEmail = request.cookies.library;
     return userstore.getUserByEmail(userEmail);
   }
 }

@@ -1,14 +1,3 @@
 {
-  "allInLibrary": [
-    {
-      "id": "0eba6413-a751-4d86-991b-56af66543c8e",
-      "title": "Tech",
-      "books": []
-    },
-    {
-      "id": "2ffa2ed9-d9ff-4e43-8004-e926aecb0533",
-      "title": "Art",
-      "books": []
-    }
-  ]
+  "allInLibrary": []
 }
