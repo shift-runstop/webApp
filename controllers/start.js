@@ -33,5 +33,6 @@ const start = {
 
 // statistics on startpage
  
-};
+}
+
 module.exports = start;

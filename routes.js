@@ -24,11 +24,11 @@ router.get('/book/:id', genres.index);
 
 // Genre control
 router.get('/genres/:id/deleteBook/:bookId', genres.deleteBook);
-router.get('/library/deletegenre/:id', library.deleteGenre);
+router.get('/library/deleteGenre/:id', library.deleteGenre);
 router.post('/library/addGenre', library.addGenre);
 
 //Book list control
-router.post('/genres/addbook', genres.addBook);
+router.post('/genres/addBook', genres.addBook);
 router.post('/genres/:id/updateBook/:bookId', genres.updateBook);
 
 module.exports = router;

@@ -34,7 +34,7 @@ const accounts = {
   register(request, response) {
 
     const user = request.body;
-    user.id = uuid();
+    user.id = uuid(); // TypeError: Cannot set property'id' of undefined
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
@@ -43,7 +43,7 @@ const accounts = {
 
   authenticate(request, response) {
 
-    const user = userstore.getUserByEmail(request.body.email);
+    const user = userstore.getUserByEmail(request.body.email); // TypeError: Cannot read property 'email' of undefined
     if (user && user.password === request.body.password) {
       response.cookie('genre', user.email);
       logger.info(`logging in ${user.email}`);
@@ -58,6 +58,7 @@ const accounts = {
     const userEmail = request.cookies.library;
     return userstore.getUserByEmail(userEmail);
   }
+  
 }
 
 module.exports = accounts;

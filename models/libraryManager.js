@@ -1,7 +1,7 @@
 'use strict';
 const _ = require('lodash');
 const logger = require('../utils/logger')
-const JsonStore = require('./JsonStore');
+const JsonStore = require('./json-store');
 //const accounts = require ('./accounts.js');
 const cloudinary = require('cloudinary');
 
@@ -91,5 +91,6 @@ const libraryManager = {
     book[index].publisher = updatedBook.publisher;
   }
 
-};
+}
+
 module.exports = libraryManager;

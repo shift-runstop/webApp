@@ -5,7 +5,7 @@ const JsonStore = require('./json-store');
 
 const userStore = {
 
-  store: new JsonStore('./models/user-store.json', {users: []}),
+  store: new JsonStore('./models/user-store.json', { users: [] }),
   collection: 'users',
 
   getAllUsers() {
@@ -17,12 +17,16 @@ const userStore = {
   },
 
   getUserById(id) {
-    return this.store.findOneBy(this.collection, { id: id });
+    return this.store.findOneBy(this.collection, { 
+      id: id
+    });
   },
 
   getUserByEmail(email) {
-    return this.store.findOneBy(this.collection, { email: email });
+    return this.store.findOneBy(this.collection, {
+      email: email
+    });
   },
-};
+}
 
 module.exports = userStore;
