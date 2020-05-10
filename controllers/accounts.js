@@ -45,7 +45,7 @@ const accounts = {
 
     const user = userstore.getUserByEmail(request.body.email); // TypeError: Cannot read property 'email' of undefined
     
-    if (user && user.password === request.body.password { 
+    if (user && user.password === request.body.password) { 
       response.cookie('genre', user.email);
       logger.info(`logging in ${user.email}`);
       response.redirect('/library');

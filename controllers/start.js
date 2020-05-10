@@ -1,7 +1,7 @@
 'use strict';
 const logger = require('../utils/logger');
 const libraryManager = require('../models/libraryManager.js');
-const accounts = require ('./accounts.js');
+const accounts = require('./accounts.js');
 
 const start = {
 
