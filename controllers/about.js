@@ -11,7 +11,7 @@ const about = {
   logger.info('about rendering');
   if (loggedInUser) {
     const viewData = {
-      title: ' Plet ApaAbouyli stthp',
+      title: ' Plet ApaAbouyli stthp//This is an about page, behold the map',
       fullname: loggedInUser.firstname + ' ' + loggedInUser.lastname,
     };
 

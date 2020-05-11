@@ -1,11 +1,25 @@
 {
-    "users": [
-        {
-            "firstName": "admin",
-            "lastName": "password",
-            "email": "admin@pass.com",
-            "password": "pass",
-            "id": "2bL133789-666g-1a36-6kn3-aa13372d51"
-        }
-    ]
+  "users": [
+    {
+      "firstName": "admin",
+      "lastName": "password",
+      "email": "admin@pass.com",
+      "password": "pass",
+      "id": "2bL133789-666g-1a36-6kn3-aa13372d51"
+    },
+    {
+      "firstName": "dis",
+      "lastName": "dah",
+      "email": "dee@oder.ting",
+      "password": "whaisdah",
+      "id": "aff6d213-3a1d-4616-9756-afbe0be1f40f"
+    },
+    {
+      "firstName": "some",
+      "lastName": "one",
+      "email": "else@1.com",
+      "password": "sum1els",
+      "id": "d6b631c7-d47f-4287-a9c8-c182cbacfb4d"
+    }
+  ]
 }

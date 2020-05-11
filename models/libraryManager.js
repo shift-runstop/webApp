@@ -2,7 +2,6 @@
 const _ = require('lodash');
 const logger = require('../utils/logger')
 const JsonStore = require('./json-store');
-//const accounts = require ('./accounts.js');
 const cloudinary = require('cloudinary');
 
 try {
@@ -26,19 +25,11 @@ const libraryManager = {
   getAllGenres() {
     return this.store.findAll(this.collection); // allInLibrary;
   },
-/*
-  getUserGenres() {
-    index(request, response) {
-      const loggedInUser = accounts.getCurrentUser(request);
-      if (loggedInUser) {
-        return this.store.findByIds(this.collection);
-      }
-      else response.redirect('/');
 
-    }
-    
+  getUserGenres() {
+      return this.store.findByIds(this.collection);      
   },
-*/
+
   getGenre(id) {
     return this.store.findOneBy(this.collection, {id:id}); //_.find(this.allInLibrary, { id: id });
   },

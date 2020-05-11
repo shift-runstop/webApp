@@ -3,22 +3,28 @@
 const logger = require('../utils/logger');
 const libraryManager = require('../models/libraryManager');
 const uuid = require('uuid');
+const accounts = require('./accounts.js');
+
 
 const genres = {
 
   index(request, response) {
-
+    
+    const loggedInUser = accounts.getCurrentUser(request);
     const genreId = request.params.id;
     logger.debug('Genre id = ' + genreId);
+    if (loggedInUser) {
+      const viewData = {
 
-    const viewData = {
+        title: 'Books held in the library of this genre',
+        genres: libraryManager.getGenre(genreId),
+        fullname: loggedInUser.firstName + ' ' + loggedInUser.lastName,
 
-      title: 'Books held in the library of this genre',
-      genres: libraryManager.getGenre(genreId),
-
-    };
+     };
 
     response.render('book', viewData); //genre
+    }
+    else response.redirect('/');
   },
 
     deleteBook(request, response) {

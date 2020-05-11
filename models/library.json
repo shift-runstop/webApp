@@ -1,3 +1,12 @@
 {
-  "allInLibrary": []
+  "allInLibrary": [
+    {
+      "id": "8ebb85c3-4646-4a20-b211-72c731e0e130",
+      "userid": "d6b631c7-d47f-4287-a9c8-c182cbacfb4d",
+      "title": "Art",
+      "picture": "http://res.cloudinary.com/diden3ks0/image/upload/v1589208403/h6zki63iehgpsygmke7q.jpg",
+      "date": "2020-05-11T14:46:43.655Z",
+      "books": []
+    }
+  ]
 }

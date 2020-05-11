@@ -9,7 +9,7 @@ const accounts = {
     const viewData = {
       title: 'Login or Signup',
     };
-    response.render('start', viewData);
+    response.render('index', viewData);
   },
 
   login(request, response) {
@@ -26,7 +26,7 @@ const accounts = {
 
   signup(request, response) {
     const viewData = {
-      title: 'Login to the Service',
+      title: 'signup for the Service',
     };
     response.render('signup', viewData);
   },
@@ -34,7 +34,7 @@ const accounts = {
   register(request, response) {
 
     const user = request.body;
-    user.id = uuid(); // TypeError: Cannot set property'id' of undefined
+    user.id = uuid(); 
     userstore.addUser(user);
     logger.info(`registering ${user.email}`);
     response.redirect('/');
@@ -43,14 +43,14 @@ const accounts = {
 
   authenticate(request, response) {
 
-    const user = userstore.getUserByEmail(request.body.email); // TypeError: Cannot read property 'email' of undefined
+    const user = userstore.getUserByEmail(request.body.email); 
     
     if (user && user.password === request.body.password) { 
-      response.cookie('genre', user.email);
+      response.cookie('library', user.email);
       logger.info(`logging in ${user.email}`);
-      response.redirect('/library');
+      response.redirect('/start');
     } else {
-      response.redirect('/login');
+      response.redirect('/');
     }
   
   },

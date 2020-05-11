@@ -1,6 +1,8 @@
 // use javascript in strict mode, got it.
 'use strict';
 
+// 卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐
+
 // import all required modules, ok on that too..
 const express = require("express");
 const logger = require('./utils/logger');
@@ -17,6 +19,8 @@ app.use(cookieParser());
 app.use(fileUpload());
 // static files output to public folder, sure if you say so.
 app.use(express.static("public"));
+
+app.use(bodyParser.urlencoded({ extended: false, }));
 
 // use handlebars
 app.engine('.hbs', exphbs({
@@ -85,9 +89,6 @@ app.set('view engine', '.hbs');
 // import routes file and use this for routing, cool get me around the place.
 const routes = require('./routes');
 app.use('/', routes);
-
-// for parsing bodies, moved require to top of file
-app.use(bodyParser.urlencoded({extended: false, }));
 
 // listenOcarinaoftime.mp3 max port
 const listener = app.listen(process.env.PORT || 65535, function () {

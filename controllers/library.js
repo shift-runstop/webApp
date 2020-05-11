@@ -48,7 +48,7 @@ const library = {
       date: date,
       books:[],
     };
-
+    logger.debug('There should be a new Genre' + newGenre);
     libraryManager.addGenre(newGenre, function() {
       response.redirect('/library');
     });
