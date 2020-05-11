@@ -22,16 +22,5 @@
 
 ## Buglist
 
-- Session management err :
-
-``` javaScript
-TypeError: Cannot set property 'id' of undefined
-    at register (D:\simple-mesquite-trunk-2020-05-07_102050\app\controllers\accounts.js:37:13)
-
-TypeError: Cannot read property 'email' of undefined
-    at authenticate (D:\simple-mesquite-trunk-2020-05-07_102050\app\controllers\accounts.js:46:56)
-```
-
-- similar err on adding to book list and genre list templates.....
-- misc err seems resolved.
-- Something about the object instantiation maybe? 
+- Card display of genrelist
+- can't access booklist
