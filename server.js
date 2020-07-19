@@ -3,7 +3,7 @@
 
 // 卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐卐
 
-// import all required modules, ok on that too..
+// import all required modules
 const express = require("express");
 const logger = require('./utils/logger');
 const exphbs = require('express-handlebars');
